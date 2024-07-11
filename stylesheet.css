@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    display: flex;
+}
+#card-container {
+    width:35%;
+    background-color: #0A1F2D;
+    
+}
+#card-body{
+    position: absolute;
+    top: 8rem;
+    opacity: 75%;
+    width: 35vw;
+    background-color: #D8D4D3;
+    opacity: 75%;
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    width: 50%;
+    
+}
+#content {
+    width: 65%;
+    background-color: #e9e4e3;
+    
+    
+}
+img  {
+    width: 35vw;;
+}
+
+p {
+
+}
