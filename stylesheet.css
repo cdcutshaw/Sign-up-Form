@@ -15,6 +15,7 @@
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+    height: auto;
   }
   input, button, textarea, select {
     font: inherit;
@@ -25,40 +26,131 @@
   #root, #__next {
     isolation: isolate;
   }
-
+  .quicksand-main {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  
 body{
     display: flex;
     flex-direction: row;
+    font-family:  quicksand, arial;
+    
+
 }
 #card-container {
-    width:35%;
-    background-color: #0A1F2D;
-    
+    width:40vw;   
 }
 #card-body{
     position: absolute;
     top: 8rem;
     opacity: 75%;
-    width: 35vw;
+    width: 40vw;
     background-color: #D8D4D3;
     opacity: 75%;
     display: flex;
     justify-content: center;
 }
+#sidebar-img {
+    position: fixed;
+    height: 100vw;
+    width: 40vw;
+}
+#img-credit {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    font-size: 1rem;
+    font-weight: 700;
+    color:#D8D4D3;
+    
+}
+
+
+
 #logo {
-    width: 50%;
+    width: 20vw;
     
 }
 #content {
-    width: 65%;
+    width: 60%;
+    height: 100vh;
     background-color: #e9e4e3;
-    
-    
-}
-img  {
-    width: 35vw;;
+    display: flex;
+    flex-direction: column;
+    flex: auto
 }
 
-p {
 
+#para-div {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-weight: 400;
+    color: #764B3A;
+    font-size: 1.5rem;
+}
+
+form {
+    background-color:#D8D4D3;
+    padding: 2.5rem;
+    color:#474e47;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+button {
+    border-radius: 6px;
+    width: 20vw;
+    height: 5vh;
+    color:#474e47;
+    border-color: #474e47;
+    background-color: #adbdab;
+    margin: 1rem;
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+strong {
+    color:#6D776C;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.form-row {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.form-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+
+}
+ #login {
+    display: flex;
+    margin: 1rem;
+ }
+
+ a:link {
+    color: #474e47;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #764B3A;}
+
+
+input {
+    border-radius: 5px;
 }

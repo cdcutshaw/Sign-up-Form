@@ -13,45 +13,57 @@
 </head>
 <body>
     <div id="card-container">
-        <img src="sidebar.jpg" alt="studio image">
+        <img id="sidebar-img" src="sidebar.jpg" alt="">
         <div id="card-body">
             <img id="logo" src="logo.png" alt="C Dawn Interior Design Logo">
         </div>
+        <div id="img-credit">photo by <a href="https://www.pexels.com/photo/scissors-and-pens-on-a-white-surface-6580011/"> cottonbro studio </a> on <a href="https://www.pexels.com/"> Pexels </a></div>
     </div>
     <div id="content">
-        <div>
-            <p>This is not a real online service! From interior consulting to comprehensive design services, let us create a space that is uniquely you. Create an account to learn more.</p>
+        <div id="para-div">
+            <p>This is not a real online service! From basic interior consulting to comprehensive design services, let us create a space that is uniquely you. Create an account to learn more.</p>
         </div>
-        <div>
-            <p><strong>Sign up now!</strong></p>
+        <div >
             <form action="" method="post">
-
-                <div >
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                <p><strong>Sign up now!</strong></p>  
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John">
+                    </div>
+                    <div class="form-col">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Smith">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone-number">
+                    <div class="form-col">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number">
+                    </div>
                 </div>
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
 
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <div class="form-col">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
                 </div>
-            
+                
             </form>
+            <button type="submit">Create Account</button>
         </div>
-        <div>
-            <button>Create Account</button>
-            <div>
+        <div >
+            <div id="login" >
                 <p>Already have an account? </p>
                 <a href="">Log in</a>
             </div>
